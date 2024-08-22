@@ -74,8 +74,8 @@ client.on('guildMemberAdd', async member => {
             { name: 'Invited By', value: inviterMention, inline: true },
             { name: 'Invite Used', value: usedInvite ? `||${usedInvite.code}||` : 'Direct Join', inline: true },
             { name: 'You\'re Member', value: `${member.guild.memberCount}`, inline: true },
-            { name: 'Server Rules', value: '<#1164662648080707604>.', inline: true },
-            { name: 'Support Channel', value: '<#1166772582951964702>.', inline: true }
+            { name: 'Server Rules', value: '<#1275738140413530124>.', inline: true },
+            { name: 'Support Channel', value: '<#1275738141386342461>.', inline: true }
         )
         .setThumbnail(member.user.displayAvatarURL())
         .setTimestamp();
@@ -89,19 +89,19 @@ client.on('guildMemberAdd', async member => {
         .addComponents(
             new MessageButton()
                 .setStyle('LINK')
-                .setURL('https://www.youtube.com/@wick_studio')       // link to button 1
+                .setURL('https://www.youtube.com/@Lynur')       // link to button 1
                 .setLabel('YouTube')                                 // name of button 1
                 .setEmoji('<:Youtubee:1158819353953828984>'),       // emoji of button 1
             new MessageButton()
                 .setStyle('LINK')
-                .setURL('https://github.com/wickstudio')           // link to button 2
-                .setLabel('GitHub')                               // name of button 2
-                .setEmoji('<:Github:1132413518348566589>'),      // emoji of button 2
+                .setURL('https://www.instagram.com/lynur_?igsh=MXQ4b2dxNm5vaW1xNg%3D%3D&utm_source=qr')           // link to button 2
+                .setLabel('insta')                               // name of button 2
+                .setEmoji(':download1:'),      // emoji of button 2
             new MessageButton()
                 .setStyle('LINK')
-                .setURL('https://wickdev.xyz/')                // link to button 3
-                .setLabel('Website')                          // name of button 3
-                .setEmoji('<:web:1129345172333932595>')      // emoji of button 3
+                .setURL(''https://www.tiktok.com/@lynuryt?_t=8iaqdozQneE&_r=1'')                // link to button 3
+                .setLabel('tiktok')                          // name of button 3
+                .setEmoji(':download:')      // emoji of button 3
         );
 
     welcomeChannel.send({ embeds: [welcomeEmbed], components: [row] });
